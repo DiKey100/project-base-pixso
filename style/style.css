@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --yellow: #ffc247;
+  --dark-blue: #02033b;
+  --blue-bttn: #4335de;
+  --white: #f3f8ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 200px 1fr 150px;
+  font-family: "Inter", sans-serif;
+}
+[class*="-container"] {
+  width: 1440px;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+}
+
+/* Section 1 */
+/* Section 2 */
+/* Section 3 */
+/* Section 4 */
+/* Section 5 */
+
+
+/* Section 6 */
+.main-content__section-6 {
+  height: 464px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect-6__content {
+  height: 296px;
+  width: 840px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section 6: style for card's */
+[class^="sect-6__card-"] {
+  height: 296px;
+  padding: 48px;
+  border-radius: 48px;
+  background: linear-gradient(to bottom, rgba(253, 178, 53, 0.6), rgba(247, 201, 95, 0.4)); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.sect-6__card-1 {
+  width: 460px;
+}
+.sect-6__card-2 {
+  width: 310px;
+}
+
+
+/* Section 6: style for text */
+.sect-6-card__descript {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.sect-6-card__title {
+  font-weight: 800;
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  line-height: 30px;
+  color: black;
+}
+.sect-6-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+/* Section 6: style for buttons */
+[class^="sect-6-card__bttn-"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 19px;
+  padding-right: 19px;
+  background: none;
+  border: 1px solid var(--dark-blue);
+  box-shadow: inset 0 0 0 1px var(--dark-blue);
+  border-radius: 42px;
+  height: 50px;
+}
+[class^="sect-6-card__bttn-"] > span {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--dark-blue);
+  margin-bottom: 3px;
+}
+[class^="sect-6-card__bttn-"] > svg {
+  display: none;
+}
+
+/* Section 6: style with hover's */
+[class^="sect-6__card-"]:hover {
+  background: linear-gradient(to bottom, rgb(247, 201, 95), rgb(253, 178, 53));
+}
+[class^="sect-6__card-"]:hover .sect-6-card__title, .sect-6-card__text {
+  color: var(--dark-blue);
+}
+[class^="sect-6__card-"]:hover button {
+  background-color: var(--blue-bttn);
+  border: none;
+  box-shadow: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+[class^="sect-6__card-"]:hover button > span {
+  color: white;
+}
+[class^="sect-6-card__bttn-"]:hover {
+  cursor: pointer;
+}
+[class^="sect-6-card__bttn-"]:hover > svg {
+  display: block;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+
+/* Section 7 */
+.main-content__section-7 {
+  height: 408px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(41, 37, 204), rgb(75, 72, 229));
+  color: white;
+}
+.sect-7__content {
+  height: 240px;
+  width: 750px;
+
+  display: grid;
+  justify-items: center;
+}
+
+/* Section 7: style for text */
+.sect-7-cont__text {
+  align-self: start;
+
+  height: 125px;
+  width: 720px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect-7-cont-text__item-1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  letter-spacing: -0.7px;
+}
+.sect-7-cont-text__item-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Section 7: style for buttons */
+.sect-7-cont__bttns {
+  align-self: end;
+
+  display: flex;
+  justify-content: center;
+  width: 720px;
+}
+[class^="sect-7-cont-cloud"] {
+  display: grid;
+  width: 300px;
+}
+.sect-7-cont-cloud__bttn-1 {
+  margin-right: 12px;
+}
+.sect-7-cont-cloud__bttn-2{
+  margin-left: 12px;
+}
+.sect-7-cont__bttn-1 {
+  justify-self: end;
+}
+.sect-7-cont__bttn-2{
+  justify-self: start;
+}
+[class^="sect-7-cont__bttn-"] {
+  height: 55px;
+  border: 1px solid white;
+  border-radius: 42px;
+  box-shadow: inset 0 0 0 2px white;
+  background: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+[class^="sect-7-cont__bttn-"] > span {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 22px;
+  color: white;
+}
+[class^="sect-7-cont__bttn-"] > svg {
+  display: none;
+}
+
+/* Section 7: with hover's */
+[class^="sect-7-cont__bttn-"]:hover {
+  border: none;
+  background-color: var(--yellow);
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+[class^="sect-7-cont__bttn-"]:hover > span {
+  color: var(--dark-blue);
+}
+[class^="sect-7-cont__bttn-"]:hover > svg {
+  display: block;
+  margin-left: 15px;
+}
+
+
+/* Section 8 */
+.main-content__section-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 975px;
+  color: var(--dark-blue);
+}
+.sect-8-content {
+  width: 1056px;
+  height: 807px;
+
+  display: grid;
+  grid-template-rows: 75px 534px 54px;
+  justify-items: center;
+  align-content: space-between;
+}
+
+/* Section 8: style for subtitle */
+.sect-8-cont__subtitle {
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  line-height: 75px;
+}
+
+/* Section 8: style for card */
+.sect-8-cont__cards {
+  display: flex;
+  justify-content: space-between;
+  
+  height: 534px;
+  width: 1056px;
+}
+[class^="sect-8-cont__card-"] {
+  width: 320px;
+  /* experement */
+  position: relative;
+}
+.sect-8-card__picture {
+  border-radius: 48px 48px 0 0;
+}
+.sect-8-card__texts {
+  height: 354px;
+  padding: 48px 52.75px 48px 48px;
+  color: var(--dark-blue);
+}
+.sect-8-card__subtitle {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.sect-8-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sect-8-card__stamp {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
+  padding: 12px 20px;
+  border-radius: 48px;
+
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+
+/* Section 8: style for button */
+.sect-8-cont__bttn {
+  width: 226px;
+  height: 54px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--yellow);
+  border-radius: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect-8-cont__bttn:visited {
+  color: var(--dark-blue);
+}
+.sect-8-cont__bttn > span {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+  color: var(--dark-blue);
+}
+.sect-8-cont__bttn > svg {
+  margin-top: 2px;
+}
