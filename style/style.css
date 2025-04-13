@@ -18,14 +18,14 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 200px 1fr 150px;
+  grid-template-rows: 200px 1fr 776px;
   font-family: "Inter", sans-serif;
 }
 [class*="-container"] {
   width: 1440px;
 }
 
-main {
+main, footer {
   display: grid;
   justify-items: center;
 }
@@ -344,4 +344,18 @@ main {
 }
 .sect-8-cont__bttn > svg {
   margin-top: 2px;
+}
+
+
+/* Footer */
+.footer-container {
+  height: 776px;
+  background-color: var(--dark-blue);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.footer-content {
+  width: 1056px;
+  height: 584px;
 }
