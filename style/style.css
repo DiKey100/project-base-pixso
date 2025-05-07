@@ -71,6 +71,7 @@ main, footer {
   align-items: center;
 }
 
+/* Section 5: style for card's */
 .sect-5-cont__cards {
   height: 602px;
   width: 696px;
@@ -98,6 +99,48 @@ main, footer {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+
+/* Section 5: style for buttons */
+.sect-5-cont__links {
+  height: 54px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+[class^="sect-5-links__bttn-"] {
+  border: 2px solid var(--dark-blue);
+  border-radius: 42px;
+  color: inherit;
+  padding-left: 22px;
+  padding-right: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect-5-links__bttn-1 {
+  justify-self: end;
+}
+.sect-5-links__bttn-2 {
+  justify-self: start;
+}
+[class^="sect-5-links__bttn-"] span {
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 22.5px;
+}
+[class^="sect-5-links__bttn-"] svg {
+  display: none;
+}
+/* Section 5: style with hover's */
+[class^="sect-5-links__bttn-"]:hover {
+  border: none;
+  background-color: var(--yellow);
+}
+[class^="sect-5-links__bttn-"]:hover svg {
+  display: block;
+  margin-left: 12px;
 }
 
 /* Section 6 */
