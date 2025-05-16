@@ -35,6 +35,74 @@ main, footer {
 /* Section 2 */
 /* Section 3 */
 /* Section 4 */
+.main-content__section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 664px;
+}
+.sect-4__content {
+  width: 1176px;
+  height: 496px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sect-4-cont__texts {
+  width: 528px;
+  color: var(--dark-blue);
+}
+.sect-4-texts__title {
+  width: 446.4px;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: -0.7px;
+  line-height: 45px;
+}
+.sect-4-texts__description {
+  width: 448.25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 43px;
+  margin-bottom: 76px;
+}
+.sect-4-texts__links {
+  width: 280px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+[class^="sect-4-links__link-"] {
+  /* height: 54px;z */
+  padding: 16px 20px;
+  border: 2px var(--dark-blue) solid;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+}
+[class^="sect-4-links__link-"] > span {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 23px;
+}
+[class^="sect-4-links__link-"] > svg {
+  display: none;
+}
+[class^="sect-4-links__link-"]:hover {
+  background-color: var(--yellow);
+  border: var(--yellow) 2px solid;
+}
+[class^="sect-4-links__link-"]:hover > svg {
+  display: block;
+  margin-left: 16px;
+}
+
+
 /* Section 5 */
 .main-content__section-5 {
   display: flex;
