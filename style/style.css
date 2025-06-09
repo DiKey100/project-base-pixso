@@ -102,6 +102,24 @@ main, footer {
   margin-left: 16px;
 }
 
+/* Section 4: style for image */
+
+.sect-4-cont__image {
+  position: relative;
+}
+.sect-4-image__square {
+  position: absolute;
+  height: 482px;
+  width: 482px;
+  left: 7px;
+  top: -7px;
+  z-index: -1;
+  background-color: var(--yellow);
+}
+.sect-4-image__picture {
+  display: block;
+}
+
 
 /* Section 5 */
 .main-content__section-5 {
