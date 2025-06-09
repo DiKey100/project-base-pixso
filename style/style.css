@@ -75,9 +75,9 @@ main, footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
 }
 [class^="sect-4-links__link-"] {
-  /* height: 54px;z */
   padding: 16px 20px;
   border: 2px var(--dark-blue) solid;
   border-radius: 42px;
